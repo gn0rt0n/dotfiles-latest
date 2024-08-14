@@ -29,7 +29,7 @@ brew "fontconfig"
 
 brew "bind"
 brew "helm"
-brew "kubernetes-cli"
+#brew "kubernetes-cli"
 brew "mysql-client"
 # pngpaste is used by obsidian.nvim to paste images
 brew "pngpaste"
@@ -41,7 +41,7 @@ cask "cursorcerer"
 # Not essentials, but added them here, as I install them all the time ;)
 cask "google-chrome"
 cask "obsidian"
-cask "spotify"
+#cask "spotify"
 cask "hammerspoon"
 cask "hot"
 cask "iterm2"

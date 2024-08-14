@@ -1,4 +1,4 @@
-# Filename: ~/github/dotfiles-latest/zshrc/zshrc-file.sh
+# Filename: ~/Code/gn0rt0n/dotfiles-latest/zshrc/zshrc-file.sh
 
 # #############################################################################
 # Do not delete the `UNIQUE_ID` line below, I use it to backup original files
@@ -24,7 +24,7 @@ mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/kitty/
 # Creating obsidian directory
 # Even if you don't use obsidian, don't remove this dir to avoid warnings
-mkdir -p ~/github/obsidian_main
+mkdir -p ~/Code/gnorton/obsidian_main
 mkdir -p ~/.config/neovide
 
 # Create the symlinks I normally use
@@ -79,52 +79,48 @@ create_symlink() {
 }
 
 # Creating symlinks for files
-create_symlink ~/github/dotfiles-latest/vimrc/vimrc-file ~/.vimrc
-create_symlink ~/github/dotfiles-latest/vimrc/vimrc-file ~/github/obsidian_main/.obsidian.vimrc
-create_symlink ~/github/dotfiles-latest/zshrc/zshrc-file.sh ~/.zshrc
-create_symlink ~/github/dotfiles-latest/bashrc/bashrc-file.sh ~/.bashrc
-create_symlink ~/github/dotfiles-latest/tmux/tmux.conf.sh ~/.tmux.conf
-create_symlink ~/github/dotfiles-latest/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
-create_symlink ~/github/dotfiles-latest/kitty/kitty.conf ~/.config/kitty/kitty.conf
-create_symlink ~/github/dotfiles-latest/yabai/yabairc ~/.yabairc
-create_symlink ~/github/dotfiles-latest/.prettierrc.yaml ~/.prettierrc.yaml
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/vimrc/vimrc-file ~/.vimrc
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/vimrc/vimrc-file ~/Code/gn0rt0n/obsidian_main/.obsidian.vimrc
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/zshrc/zshrc-file.sh ~/.zshrc
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/bashrc/bashrc-file.sh ~/.bashrc
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/tmux/tmux.conf.sh ~/.tmux.conf
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/kitty/kitty.conf ~/.config/kitty/kitty.conf
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/yabai/yabairc ~/.yabairc
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/.prettierrc.yaml ~/.prettierrc.yaml
 
 # Creating symlinks for directories
-create_symlink ~/github/dotfiles-latest/neovim/neobean/ ~/.config/neobean
-create_symlink ~/github/dotfiles-latest/neovim/quarto-nvim-kickstarter/ ~/.config/quarto-nvim-kickstarter
-create_symlink ~/github/dotfiles-latest/neovim/kickstart.nvim/ ~/.config/kickstart.nvim
-create_symlink ~/github/dotfiles-latest/neovim/lazyvim/ ~/.config/lazyvim
-create_symlink ~/github/dotfiles-latest/hammerspoon/ ~/.hammerspoon
-create_symlink ~/github/dotfiles-latest/karabiner/mxstbr/ ~/.config/karabiner
-create_symlink ~/github/dotfiles-latest/sketchybar/felixkratz-linkarzu/ ~/.config/sketchybar
-create_symlink ~/github/dotfiles-latest/neovide/ ~/.config/neovide
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovim/neobean/ ~/.config/neobean
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovim/quarto-nvim-kickstarter/ ~/.config/quarto-nvim-kickstarter
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovim/kickstart.nvim/ ~/.config/kickstart.nvim
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovim/lazyvim/ ~/.config/lazyvim
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/hammerspoon/ ~/.hammerspoon
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/karabiner/mxstbr/ ~/.config/karabiner
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovide/ ~/.config/neovide
 # Notice I also have the "nvim" directory below and I have it pointing to my
 # "neobean" config.
 # If I don't do this, my daily note with hyper+t+r won't work
 # If you want to open the daily note with a different distro, update the "nvim"
 # symlink, for example you can change it from "neobean" to "lazyvim"
-create_symlink ~/github/dotfiles-latest/neovim/neobean/ ~/.config/nvim
-# create_symlink ~/github/dotfiles-latest/sketchybar/felixkratz ~/.config/sketchybar
-# create_symlink ~/github/dotfiles-latest/sketchybar/default ~/.config/sketchybar
-# create_symlink ~/github/dotfiles-latest/sketchybar/neutonfoo ~/.config/sketchybar
+create_symlink ~/Code/gn0rt0n/dotfiles-latest/neovim/neobean/ ~/.config/nvim
 # echo "finished 1"
 
 # # This is on the other repo where I keep my ssh config files
 # I commented this as I don't have access to this repo in all the hosts
-# ln -snf ~/github/dotfiles/sshconfig-pers ~/.ssh/config 2>&1 >/dev/null
+# ln -snf ~/Code/gn0rt0n/dotfiles/sshconfig-pers ~/.ssh/config 2>&1 >/dev/null
 
 # I'm keeping the old manual commands here
-# ln -snf ~/github/dotfiles-latest/zshrc/zshrc-file.sh ~/.zshrc >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/vimrc/vimrc-file ~/.vimrc >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/vimrc/vimrc-file ~/github/obsidian_main/.obsidian.vimrc >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/tmux/tmux.conf.sh ~/.tmux.conf >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/yabai/yabairc ~/.yabairc >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/zshrc/zshrc-file.sh ~/.zshrc >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/vimrc/vimrc-file ~/.vimrc >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/vimrc/vimrc-file ~/Code/gn0rt0n/obsidian_main/.obsidian.vimrc >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/tmux/tmux.conf.sh ~/.tmux.conf >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/yabai/yabairc ~/.yabairc >/dev/null 2>&1
 #
 # # Below are symlinks that point to directories
-# ln -snf ~/github/dotfiles-latest/neovim/neobean ~/.config/nvim >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/hammerspoon ~/.hammerspoon >/dev/null 2>&1
-# ln -snf ~/github/dotfiles-latest/karabiner/mxstbr ~/.config/karabiner >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/neovim/neobean ~/.config/nvim >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/hammerspoon ~/.hammerspoon >/dev/null 2>&1
+# ln -snf ~/Code/gn0rt0n/dotfiles-latest/karabiner/mxstbr ~/.config/karabiner >/dev/null 2>&1
 
 # Autocompletion settings
 # https://github.com/Phantas0s/.dotfiles/blob/master/zsh/completion.zsh
@@ -192,13 +188,6 @@ alias python='python3'
 # Shows the last 30 entries, default is 15
 alias history='history -30'
 
-# kubernetes, if you need help, just run 'kgp --help' for example
-alias k='kubectl'
-alias kga='kubectl get all'
-alias kgp='kubectl get pods'
-alias kgpa='kubectl get pods --all-namespaces'
-alias kgpo='kubectl get pods -o wide'
-
 # golang aliases
 alias coverage='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
@@ -218,7 +207,7 @@ alias coverage='go test -coverprofile=coverage.out && go tool cover -html=covera
 # my latest changes, otherwise your changes will be overriden by my updates
 echo
 echo "Pulling latest changes, please wait..."
-(cd ~/github/dotfiles-latest && git pull >/dev/null 2>&1) || echo "Failed to pull dotfiles"
+(cd ~/Code/gn0rt0n/dotfiles-latest && git pull >/dev/null 2>&1) || echo "Failed to pull dotfiles"
 # Every time I log into a host I want to pull my github repos, but not cd to that dir
 # So running the command above in a subshell
 #
@@ -285,31 +274,6 @@ if [ "$OS" = 'Mac' ]; then
     export PATH=$PATH:$HOME/go/bin
   fi
 
-  # sketchybar
-  # This will update the brew package count after running a brew upgrade, brew
-  # update or brew outdated command
-  # Personally I added "list" and "install", and everything that is after but
-  # that's just a personal preference.
-  # That way sketchybar updates when I run those commands as well
-  if command -v sketchybar &>/dev/null; then
-    # When the zshrc file is ran, reload sketchybar, in case the theme was
-    # switched
-    # I disabled this as it was getting refreshed every time I opened the
-    # terminal and if I restored a lot of sessions after rebooting it was a mess
-    # sketchybar --reload
-
-    # Define a custom 'brew' function to wrap the Homebrew command.
-    function brew() {
-      # Execute the original Homebrew command with all passed arguments.
-      command brew "$@"
-      # Check if the command includes "upgrade", "update", or "outdated".
-      if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]] || [[ $* =~ "list" ]] || [[ $* =~ "install" ]] || [[ $* =~ "uninstall" ]] || [[ $* =~ "bundle" ]] || [[ $* =~ "doctor" ]] || [[ $* =~ "info" ]] || [[ $* =~ "cleanup" ]]; then
-        # If so, notify SketchyBar to trigger a custom action.
-        sketchybar --trigger brew_update
-      fi
-    }
-  fi
-
   # Luaver
   # luaver can be used to install multiple lua and luarocks versions
   # Commands below downloads and uses a specific version
@@ -331,7 +295,7 @@ if [ "$OS" = 'Mac' ]; then
   # Starship
   # https://starship.rs/config/#prompt
   if command -v starship &>/dev/null; then
-    export STARSHIP_CONFIG=$HOME/github/dotfiles-latest/starship-config/starship-eldritch.toml
+    export STARSHIP_CONFIG=$HOME/Code/gn0rt0n/dotfiles-latest/starship-config/starship-eldritch.toml
     eval "$(starship init zsh)" >/dev/null 2>&1
   fi
 
@@ -459,12 +423,6 @@ if [ "$OS" = 'Mac' ]; then
     fi
   fi
 
-  # Initialize kubernetes kubectl completion if kubectl is installed
-  # https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#enable-shell-autocompletion
-  if command -v kubectl &>/dev/null; then
-    source <(kubectl completion zsh)
-  fi
-
   # Check if chruby is installed
   # Source chruby scripts if they exist
   # Working instructions to install on macos can be found on the jekyll site
@@ -517,7 +475,7 @@ if [ "$OS" = 'Linux' ]; then
   install_this_package="yes"
   if command -v starship &>/dev/null; then
     # This is what applies the specific profile
-    export STARSHIP_CONFIG=$HOME/github/dotfiles-latest/starship-config/$starship_file >/dev/null 2>&1
+    export STARSHIP_CONFIG=$HOME/Code/gn0rt0n/dotfiles-latest/starship-config/$starship_file >/dev/null 2>&1
     eval "$(starship init zsh)" >/dev/null 2>&1
   else
     if [ "$install_this_package" != "no" ]; then
@@ -533,7 +491,7 @@ if [ "$OS" = 'Linux' ]; then
         # After installing, initialize it
         eval "$(starship init zsh)"
         # This is what applies the specific profile
-        export STARSHIP_CONFIG=$HOME/github/dotfiles-latest/starship-config/$starship_file
+        export STARSHIP_CONFIG=$HOME/Code/gn0rt0n/dotfiles-latest/starship-config/$starship_file
         echo "Starship installed successfully."
       fi
     fi
@@ -542,8 +500,8 @@ if [ "$OS" = 'Linux' ]; then
   # Initialize z.lua, if it is installed
   # If not installed, this will install lua and then z.lua
   install_this_package="no"
-  if command -v $HOME/github/z.lua/z.lua &>/dev/null; then
-    eval "$(lua $HOME/github/z.lua/z.lua --init zsh enhanced once)"
+  if command -v $HOME/Code/gn0rt0n/z.lua/z.lua &>/dev/null; then
+    eval "$(lua $HOME/Code/gn0rt0n/z.lua/z.lua --init zsh enhanced once)"
   else
     if [ "$install_this_package" != "no" ]; then
       # First we need to install Lua
@@ -569,20 +527,20 @@ if [ "$OS" = 'Linux' ]; then
 
       # After installing Lua, I need to install z.lua from github
       echo
-      if [ ! -d "$HOME/github/z.lua" ]; then
+      if [ ! -d "$HOME/Code/gn0rt0n/z.lua" ]; then
         mkdir -p $HOME/github
         cd $HOME/github
         git clone https://github.com/skywind3000/z.lua.git 2>&1 >/dev/null
       fi
 
       # verify if the z.lua github repo was cloned successfully
-      if [ ! -d "$HOME/github/z.lua" ]; then
+      if [ ! -d "$HOME/Code/gn0rt0n/z.lua" ]; then
         echo -e "${boldgreen}warning: failed to clone the repository. skipping the z.lua configuration....${nocolor}"
         # sleep 1
       else
         echo "successfully cloned the z.lua repository."
         # After installing, initialize it
-        eval "$(lua $HOME/github/z.lua/z.lua --init zsh enhanced once)"
+        eval "$(lua $HOME/Code/gn0rt0n/z.lua/z.lua --init zsh enhanced once)"
         echo "$LUA_PACKAGE installed successfully."
       fi
     fi
@@ -590,8 +548,8 @@ if [ "$OS" = 'Linux' ]; then
 
   # Source zsh-autosuggestions if file exists
   install_this_package="no"
-  if [ -f "$HOME/github/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-    source $HOME/github/zsh-autosuggestions/zsh-autosuggestions.zsh
+  if [ -f "$HOME/Code/gn0rt0n/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+    source $HOME/Code/gn0rt0n/zsh-autosuggestions/zsh-autosuggestions.zsh
   else
     if [ "$install_this_package" != "no" ]; then
       echo
@@ -601,13 +559,13 @@ if [ "$OS" = 'Linux' ]; then
       cd $HOME/github
       git clone https://github.com/zsh-users/zsh-autosuggestions 2>&1 >/dev/null
       # Verify if the repo was cloned successfully
-      if [ ! -d "$HOME/github/zsh-autosuggestions" ]; then
+      if [ ! -d "$HOME/Code/gn0rt0n/zsh-autosuggestions" ]; then
         echo
         echo -e "${boldRed}Warning: Failed to clone the zsh-autosuggestions repository. Check this manually${noColor}"
         # sleep 1
       else
         # After installing, initialize it
-        source $HOME/github/zsh-autosuggestions/zsh-autosuggestions.zsh
+        source $HOME/Code/gn0rt0n/zsh-autosuggestions/zsh-autosuggestions.zsh
         echo "Successfully installed zsh-autosuggestions"
       fi
     fi
@@ -615,8 +573,8 @@ if [ "$OS" = 'Linux' ]; then
 
   # Initialize zsh-vi-mode, if it is installed
   install_this_package="no"
-  if [ -d "$HOME/github/zsh-vi-mode" ]; then
-    source $HOME/github/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+  if [ -d "$HOME/Code/gn0rt0n/zsh-vi-mode" ]; then
+    source $HOME/Code/gn0rt0n/zsh-vi-mode/zsh-vi-mode.plugin.zsh
     # This modifies the escape key
     ZVM_VI_ESCAPE_BINDKEY=kj
     ZVM_VI_INSERT_ESCAPE_BINDKEY=$ZVM_VI_ESCAPE_BINDKEY
@@ -633,13 +591,13 @@ if [ "$OS" = 'Linux' ]; then
       cd $HOME/github
       git clone https://github.com/jeffreytse/zsh-vi-mode.git 2>&1 >/dev/null
       # Verify if the zsh-vi-mode GitHub repo was cloned successfully
-      if [ ! -d "$HOME/github/zsh-vi-mode" ]; then
+      if [ ! -d "$HOME/Code/gn0rt0n/zsh-vi-mode" ]; then
         echo
         echo -e "${boldRed}Warning: Failed to clone the zsh-vi-mode repository. Check this manually.${noColor}"
         # sleep 1
       else
         # After installing, initialize it
-        source $HOME/github/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+        source $HOME/Code/gn0rt0n/zsh-vi-mode/zsh-vi-mode.plugin.zsh
         # This modifies the escape key
         ZVM_VI_ESCAPE_BINDKEY=kj
         ZVM_VI_INSERT_ESCAPE_BINDKEY=$ZVM_VI_ESCAPE_BINDKEY
@@ -672,12 +630,12 @@ if [ "$OS" = 'Linux' ]; then
       cd $HOME/github
       git clone --depth 1 https://github.com/junegunn/fzf.git 2>&1 >/dev/null
       # Verify if the fzf GitHub repo was cloned successfully
-      if [ ! -d "$HOME/github/fzf" ]; then
+      if [ ! -d "$HOME/Code/gn0rt0n/fzf" ]; then
         echo -e "${boldRed}Warning: Failed to clone the fzf repository. Check this manually.${noColor}"
       else
         echo "Successfully cloned the fzf repository."
         # Install fzf, this will answer `y`, `y`, and `n` to the questions asked
-        echo -e "y\ny\nn" | $HOME/github/fzf/install 2>&1 >/dev/null
+        echo -e "y\ny\nn" | $HOME/Code/gn0rt0n/fzf/install 2>&1 >/dev/null
         # After installing, initialize it
         source ~/.fzf.zsh
         echo "Successfully installed fzf"
@@ -777,11 +735,5 @@ if [ "$OS" = 'Linux' ]; then
         echo "Installed fuse"
       fi
     fi
-  fi
-
-  # Initialize kubernetes kubectl completion if kubectl is installed
-  # https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#enable-shell-autocompletion
-  if command -v kubectl &>/dev/null; then
-    source <(kubectl completion zsh)
   fi
 fi

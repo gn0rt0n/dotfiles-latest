@@ -1,5 +1,5 @@
-# Filename: ~/github/dotfiles-latest/tmux/tmux.conf.sh
-# ~/github/dotfiles-latest/tmux/tmux.conf.sh
+# Filename: ~/Code/gn0rt0n/dotfiles-latest/tmux/tmux.conf.sh
+# ~/Code/gn0rt0n/dotfiles-latest/tmux/tmux.conf.sh
 
 # #############################################################################
 # Do not delete the `UNIQUE_ID` line below, I use it to backup original files
@@ -114,10 +114,10 @@ unbind C-l
 bind J select-layout even-horizontal
 bind K select-layout even-vertical
 # bind L select-layout tiled
-bind L run-shell ~/github/dotfiles-latest/tmux/layouts/7030/apply_layout.sh
+bind L run-shell ~/Code/gn0rt0n/dotfiles-latest/tmux/layouts/7030/apply_layout.sh
 bind C-j select-layout main-horizontal
 bind C-k select-layout main-vertical
-bind C-l run-shell ~/github/dotfiles-latest/tmux/layouts/2x3/apply_layout.sh
+bind C-l run-shell ~/Code/gn0rt0n/dotfiles-latest/tmux/layouts/2x3/apply_layout.sh
 
 ###############################################################################
 # ThePrimeagen's tmux-sessionizer script, got 'em
@@ -128,45 +128,45 @@ bind C-l run-shell ~/github/dotfiles-latest/tmux/layouts/2x3/apply_layout.sh
 # sense whatsoever, because it's not ergonomic, but I call them from
 # bettertouchtool, and BTT is called from karabiner-elements
 
-tmux_sessionizer="~/github/dotfiles-latest/tmux/tools/prime/tmux-sessionizer.sh"
-tmux_sshonizer_agen="~/github/dotfiles-latest/tmux/tools/linkarzu/tmux-sshonizer-agen.sh"
-ssh_select="~/github/dotfiles-latest/tmux/tools/linkarzu/ssh-select.sh"
+tmux_sessionizer="~/Code/gn0rt0n/dotfiles-latest/tmux/tools/prime/tmux-sessionizer.sh"
+tmux_sshonizer_agen="~/Code/gn0rt0n/dotfiles-latest/tmux/tools/linkarzu/tmux-sshonizer-agen.sh"
+ssh_select="~/Code/gn0rt0n/dotfiles-latest/tmux/tools/linkarzu/ssh-select.sh"
 # Script below goes through you `~/.ssh/config` file and shows the hosts in an fzf menu
-ssh_config_select="~/github/dotfiles-latest/tmux/tools/linkarzu/ssh_config_select.sh"
-daily_note="~/github/dotfiles-latest/scripts/macos/mac/300-dailyNote.sh"
+ssh_config_select="~/Code/gn0rt0n/dotfiles-latest/tmux/tools/linkarzu/ssh_config_select.sh"
+daily_note="~/Code/gn0rt0n/dotfiles-latest/scripts/macos/mac/300-dailyNote.sh"
 
 # I tend to forget my karabiner mappings, so this opens the file in a new tmux
 # session
-karabiner_rules="~/github/scripts/macos/mac/301-openKarabinerRules.sh"
+karabiner_rules="~/Code/gn0rt0n/scripts/macos/mac/301-openKarabinerRules.sh"
 
 # Don't use C-r because it's used by tmux-resurrect
 # Don't use C-e because I'm already using it for sending command to all panes/windows in current session
 # Don't use C-s because Its used to save the session
 # Don't use C-z, not sure what its for
 unbind C-u
-bind-key -r C-u run-shell "$tmux_sessionizer ~/github/dotfiles-latest"
+bind-key -r C-u run-shell "$tmux_sessionizer ~/Code/gn0rt0n/dotfiles-latest"
 unbind C-i
-bind-key -r C-i run-shell "$tmux_sessionizer ~/github/watusy"
+bind-key -r C-i run-shell "$tmux_sessionizer ~/Code/gn0rt0n/watusy"
 unbind C-o
-# bind-key -r C-o run-shell "$tmux_sessionizer ~/github/linkarzu.github.io"
+# bind-key -r C-o run-shell "$tmux_sessionizer ~/Code/gn0rt0n/linkarzu.github.io"
 bind-key -r C-o run-shell "$tmux_sessionizer /System/Volumes/Data/mnt/github"
 unbind C-p
-bind-key -r C-p run-shell "$tmux_sessionizer ~/github/scripts"
+bind-key -r C-p run-shell "$tmux_sessionizer ~/Code/gn0rt0n/scripts"
 unbind C-t
-bind-key -r C-t run-shell "$tmux_sessionizer ~/github/obsidian_main"
+bind-key -r C-t run-shell "$tmux_sessionizer ~/Code/gn0rt0n/obsidian_main"
 unbind C-y
-# bind-key -r C-y run-shell "$tmux_sessionizer ~/github/containerdata"
+# bind-key -r C-y run-shell "$tmux_sessionizer ~/Code/gn0rt0n/containerdata"
 bind-key -r C-y run-shell "$tmux_sessionizer /System/Volumes/Data/mnt/containerdata"
 unbind C-h
 bind-key -r C-h run-shell "$tmux_sessionizer ~"
 unbind C-m
-bind-key -r C-m run-shell "$tmux_sessionizer ~/github/containerdata-public"
+bind-key -r C-m run-shell "$tmux_sessionizer ~/Code/gn0rt0n/containerdata-public"
 unbind 3
-bind-key -r 3 run-shell "$tmux_sessionizer ~/github/go"
+bind-key -r 3 run-shell "$tmux_sessionizer ~/Code/gn0rt0n/go"
 # Leaving this in quotes because iCloud dir has a white space
 unbind C-g
-bind-key -r C-g run-shell "$tmux_sessionizer ~/github/php"
-# bind-key -r C-g run-shell "$tmux_sessionizer '$HOME/Library/Mobile Documents/com~apple~CloudDocs/github/macos-setup'"
+bind-key -r C-g run-shell "$tmux_sessionizer ~/Code/gn0rt0n/php"
+# bind-key -r C-g run-shell "$tmux_sessionizer '$HOME/Library/Mobile Documents/com~apple~CloudDocs/Code/gn0rt0n/macos-setup'"
 
 unbind C-w
 bind-key -r C-w run-shell "$tmux_sshonizer_agen docker3"
@@ -198,8 +198,8 @@ bind-key -r 2 run-shell "tmux neww $karabiner_rules"
 
 # Reload the tmux configuration, display a 2 second message
 unbind r
-bind r source-file ~/.tmux.conf
-# bind r source-file ~/.tmux.conf \; display-message -d 2000 "Configuration reloaded!"
+#bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf \; display-message -d 2000 "Configuration reloaded!"
 
 # Bind pane synchronization to Ctrl-b s
 unbind Q
@@ -216,8 +216,8 @@ bind m previous-window
 
 # Resize pane to zoom so it occupies the entire screen
 unbind M
-bind -r M resize-pane -Z
-
+bind -r M resize-pane -
+#
 # The number at the end specifies number of cells
 # Increase or decrease to your liking
 bind -r Left resize-pane -L 1
@@ -228,7 +228,9 @@ bind -r Right resize-pane -R 1
 # start selecting text with "v"
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 # copy text with "y"
-bind-key -T copy-mode-vi 'y' send -X copy-selection
+#bind-key -T copy-mode-vi 'y' send -X copy-selection
+bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel "pbcopy"
+#bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
 
 # https://github.com/leelavg/dotfiles/blob/897aa883a/config/tmux.conf#L30-L39
 # https://scripter.co/command-to-every-pane-window-session-in-tmux/
@@ -360,9 +362,9 @@ set -g @catppuccin_status_modules_left "session"
 # set -g @catppuccin_directory_color "#04d1f9"
 # set -g @catppuccin_directory_icon "null"
 
-if-shell 'test -f ~/github/dotfiles-latest/youtube-banner.txt' {
+if-shell 'test -f ~/Code/gn0rt0n/dotfiles-latest/youtube-banner.txt' {
     set -g @catppuccin_status_modules_right "directory"
-    set -g @catppuccin_directory_text " linkarzu   If you like the video like it  , and remember to subscribe   "
+    set -g @catppuccin_directory_text " O50AI   If you like the video like it  , and remember to subscribe   "
     set -g @catppuccin_directory_color "#04d1f9"
     set -g @catppuccin_directory_icon "null"
 } {
