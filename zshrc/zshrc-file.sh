@@ -13,6 +13,8 @@ boldPurple="\033[1;35m"
 boldBlue="\033[1;34m"
 noColor="\033[0m"
 
+export PATH=~/bin/:~/.local/bin:$PATH
+
 # Run a clear command right after I log in to any host
 clear
 
@@ -205,9 +207,9 @@ alias coverage='go test -coverprofile=coverage.out && go tool cover -html=covera
 #
 # If you don't want to fork, comment the 3 lines below if you don't want to always pull
 # my latest changes, otherwise your changes will be overriden by my updates
-echo
-echo "Pulling latest changes, please wait..."
-(cd ~/Code/gn0rt0n/dotfiles-latest && git pull >/dev/null 2>&1) || echo "Failed to pull dotfiles"
+#echo
+#echo "Pulling latest changes, please wait..."
+#(cd ~/Code/gn0rt0n/dotfiles-latest && git pull >/dev/null 2>&1) || echo "Failed to pull dotfiles"
 # Every time I log into a host I want to pull my github repos, but not cd to that dir
 # So running the command above in a subshell
 #
@@ -257,6 +259,7 @@ if [ "$OS" = 'Mac' ]; then
   # If you want to open the daily note with a different distro, update the "nvim"
   # symlink in the symlinks section
   alias nvim='export NVIM_APPNAME="nvim" && /opt/homebrew/bin/nvim'
+  alias vi='export NVIM_APPNAME="nvim" && /opt/homebrew/bin/nvim'
 
   # https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#unix
   # Add antlr-4.13.1-complete.jar to your CLASSPATH

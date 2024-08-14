@@ -32,5 +32,5 @@ brew "zsh-autosuggestions"
 brew "zsh-vi-mode"
 cask "alacritty"
 brew "jq"
-brew "sketchybar"
+#brew "sketchybar"
 
