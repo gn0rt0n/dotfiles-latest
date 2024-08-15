@@ -190,9 +190,16 @@ alias python='python3'
 # Shows the last 30 entries, default is 15
 alias history='history -30'
 
-# golang aliases
-alias coverage='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
+# kubernetes, if you need help, just run 'kgp --help' for example
+alias k='kubectl'
+alias kga='kubectl get all'
+alias kgp='kubectl get pods'
+alias kgpa='kubectl get pods --all-namespaces'
+alias kgpo='kubectl get pods -o wide'
 
+# golang aliases
+
+alias coverage='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 # echo
 # echo "2"
 # #############################################################################
@@ -426,6 +433,12 @@ if [ "$OS" = 'Mac' ]; then
     fi
   fi
 
+  # Initialize kubernetes kubectl completion if kubectl is installed
+  # https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#enable-shell-autocompletion
+  if command -v kubectl &>/dev/null; then
+    source <(kubectl completion zsh)
+  fi
+
   # Check if chruby is installed
   # Source chruby scripts if they exist
   # Working instructions to install on macos can be found on the jekyll site
@@ -644,6 +657,11 @@ if [ "$OS" = 'Linux' ]; then
         echo "Successfully installed fzf"
       fi
     fi
+  fi
+  # Initialize kubernetes kubectl completion if kubectl is installed
+  # https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#enable-shell-autocompletion
+  if command -v kubectl &>/dev/null; then
+    source <(kubectl completion zsh)
   fi
 
   cd ~
